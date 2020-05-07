@@ -3,7 +3,7 @@
 
 ## Calculating synRVIS scores
 Calculating synRVIS requires a list of synonymous variants (e.g. from gnomAD). Variants should be listed in a tab-delimited file with the following columns:  
->#CHROM    POS    REF    ALT    GENE    CODON_CHANGE    MAF
+>#CHROM	POS	REF	ALT	GENE	CODON_CHANGE	MAF
 
 
 The script can then be run using the following command:
