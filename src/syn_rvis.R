@@ -228,3 +228,4 @@ syn.rvis <- ReadVariants(args$input, args$csc_scores, fold.mafs = T,
   CalcXY(maf.threshold = args$maf_cutoff) %>%
   CalcRVIS()
 
+write.table(syn.rvis, args$output, quote = F, sep = "\t", row.names = F)
