@@ -18,3 +18,13 @@ The script can then be run using the following command:
 
 
 ## Calculating synGERP scores
+Calculating synGERP requires a list of GERP scores (http://mendel.stanford.edu/SidowLab/downloads/gerp/) and the human reference genome and GTF, both available from Ensembl. Calculating synGERP requires Python 3.6. This script will output per-gene synGERP scores, as well as the GERP scores for every fourfold degenerate synonymous site in canonical transcripts.
+
+> python src/syn_gerp.py \
+>    -e \<input.gtf> \
+>    --rscu data/per_gene_rscu.txt \
+>    -he data/hgnc_canonical_ens75.txt \
+>    -r \<reference_genome.fa> \
+>    -g \<gerp_scores_path> \
+>    -o \<syn_gerp_output_path> \
+>    -bo \<gerp_per_site_output_path>
